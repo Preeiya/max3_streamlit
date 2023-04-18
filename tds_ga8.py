@@ -8,6 +8,7 @@ Original file is located at
 """
 
 pip install streamlit
+pip install sklearn
 
 import streamlit as st
 import pandas as pd
