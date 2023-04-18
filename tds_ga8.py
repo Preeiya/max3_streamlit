@@ -24,6 +24,3 @@ def app():
     if st.button("Find Largest"):
         largest_num = find_largest_number(num1, num2, num3)
         st.success(f"The largest number is: {largest_num}")
-
-# Run the Streamlit app
-st.run tds_ga8.py
