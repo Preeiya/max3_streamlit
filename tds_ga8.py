@@ -8,7 +8,7 @@ def find_largest(x, y, z):
         largest = z
     return largest
 
-st.title('Find the largest among 3 numbers')
+st.title('Largest of 3 numbers')
 
 num1 = st.number_input('Enter the first number',step=1)
 num2 = st.number_input('Enter the second number',step=1)
