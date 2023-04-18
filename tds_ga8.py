@@ -11,8 +11,8 @@ def find_largest(x, y, z):
 st.title('Find the largest among 3 numbers')
 
 num1 = st.number_input('Enter the first number',step=1)
-num2 = st.number_input('Enter the second number',format='%d')
-num3 = st.number_input('Enter the third number',format='%d')
+num2 = st.number_input('Enter the second number',step=1)
+num3 = st.number_input('Enter the third number',step=1)
 
 if st.button('Find Largest'):
     largest =find_largest(num1, num2, num3)
