@@ -1,19 +1,19 @@
 import streamlit as st
 
-def find_largest_number(num1, num2, num3):
-    largest_num = max(num1, num2, num3)
-    return largest_num
+def find_largest(x, y, z):
+    largest = x
+    if y > largest:
+        largest = y
+    if z > largest:
+        largest = z
+    return largest
 
-# Streamlit app
-def app():
-    st.title("Find the Largest Number")
-    st.write("Enter three numbers and find the largest among them.")
+st.title('Find the largest among 3 numbers')
 
-    num1 = st.number_input("Enter Number 1", step=1)
-    num2 = st.number_input("Enter Number 2", step=1)
-    num3 = st.number_input("Enter Number 3", step=1)
+num1 = st.number_input('Enter the first number')
+num2 = st.number_input('Enter the second number')
+num3 = st.number_input('Enter the third number')
 
-    if st.button("Find Largest"):
-        largest_num = find_largest_number(num1, num2, num3)
-        st.success(f"The largest number is: {largest_num}")
-st run tds_ga8.py
+if st.button('Find Largest'):
+    largest =find_largest(num1, num2, num3)
+    st.write(f'The largest number is: {largest}')
