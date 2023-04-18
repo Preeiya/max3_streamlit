@@ -10,7 +10,7 @@ def find_largest(x, y, z):
 
 st.title('Find the largest among 3 numbers')
 
-num1 = st.number_input('Enter the first number')
+num1 = st.number_input('Enter the first number',format='{:,d}')
 num2 = st.number_input('Enter the second number')
 num3 = st.number_input('Enter the third number')
 
