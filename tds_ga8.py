@@ -26,5 +26,5 @@ def app():
         st.success(f"The largest number is: {largest_num}")
 
 # Run the Streamlit app
-if tds_ga8 == "_main_":
-    app()
+if _name_  == "_main_":
+    tds_ga8()
